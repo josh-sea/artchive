@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "artworks",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "profileIds", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "dateOfWork", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "artworks",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "tags", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "dateOfWork", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
